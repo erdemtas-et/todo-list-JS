@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(215, 238, 194);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#inputs-div {
+  margin-top: 100px;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#inputs-div input {
+  padding: 10px;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  color: rgb(22, 122, 89);
+  border-bottom: 1px solid rgb(39, 167, 124);
+}
+
+#inputs-div button {
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(39, 167, 124);
+  color: white;
+  border: none;
+  font-weight: 900;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+#inputs-div button:hover {
+  background-color: rgb(22, 122, 89);
+}
+
+#todos-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#todos-div div {
+  margin: auto;
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  background-color: whitesmoke;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#todos-div input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+}
+
+#todos-div span {
+  padding: 0 20px 0 20px;
+  font-size: x-large;
+}
+
+#todos-div button {
+  margin-left: auto;
+  padding: 10px;
+  color: white;
+  background-color: salmon;
+  border: none;
+  cursor: pointer;
+}
+
+#todos-div button:hover {
+  background-color: red;
+}
+
+#todos-div input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
+
+#todos-div input[type="checkbox"] {
+  cursor: pointer;
+}
+
+#todos-div input[type="checkbox"]:checked {
+  outline: 2px solid lightblue;
+  box-shadow: none;
+  font-size: 2em;
+}
